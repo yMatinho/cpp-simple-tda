@@ -1,3 +1,4 @@
+#pragma once
 #include "string"
 #include "iostream"
 
@@ -19,7 +20,7 @@ public:
     string getString(string label) {
         cout << label;
         string input;
-        cin >> input;
+        getline(std::cin >> std::ws, input);
         return input;
     }
 

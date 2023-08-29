@@ -28,16 +28,19 @@ public:
         Widget::render();
         printf("Bem vindo à seção de média das notas!\n\n\n");
         vector<float> grades = this->inputGrades();
+        cout << "A média das notas é: \n\n\n"
+             << this->calculateAverage(grades) << "\n\n";
+    }
+
+private:
+    float calculateAverage(vector<float> grades) {
         float gradeSum = 0;
         for (int i = 0; i < grades.size(); i++)
         {
             gradeSum += grades[i];
         }
-        float average = gradeSum / grades.size();
-        cout << "A média das notas é: \n\n\n"
-             << average << "\n\n";
+        return gradeSum / grades.size();
     }
-
     vector<float> inputGrades()
     {
         vector<float> grades;
@@ -47,12 +50,12 @@ public:
             cout << "\n\nNota " << i + 1 << ": ";
             float grade;
             cin >> grade;
-            if(!this->isValidGrade(grade))
+            if (!this->isValidGrade(grade))
                 continue;
 
             grades.push_back(grade);
             i++;
-            
+
             if (!this->wishToContinue())
                 break;
         }

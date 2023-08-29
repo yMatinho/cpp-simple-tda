@@ -7,7 +7,6 @@
 #include <string>
 #include <stdio.h>
 #include "menu/Option.h"
-#include "menu/widgets/TesteWidget.h"
 
 using namespace std;
 int main() {

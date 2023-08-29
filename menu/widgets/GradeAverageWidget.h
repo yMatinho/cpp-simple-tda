@@ -8,6 +8,7 @@
 #include "../../factories/OperationsMenuFactory.h"
 #include "../Option.h"
 #include "iostream"
+#include "../../input/Input.h"
 
 using namespace std;
 
@@ -36,9 +37,7 @@ private:
     float calculateAverage(vector<float> grades) {
         float gradeSum = 0;
         for (int i = 0; i < grades.size(); i++)
-        {
             gradeSum += grades[i];
-        }
         return gradeSum / grades.size();
     }
     vector<float> inputGrades()
@@ -47,9 +46,7 @@ private:
         for (;;)
         {
             static int i = 0;
-            cout << "\n\nNota " << i + 1 << ": ";
-            float grade;
-            cin >> grade;
+            float grade = Input::get()->getFloat((string)"\n\nNota: ");
             if (!this->isValidGrade(grade))
                 continue;
 

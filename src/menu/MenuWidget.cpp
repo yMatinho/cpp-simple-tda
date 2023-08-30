@@ -20,6 +20,7 @@ void MenuWidget::beforeRender()
 
 void MenuWidget::render()
 {
+	Widget::render();
 	cout << "\n\n"
 		 << this->introductionText << "\n\n";
 	this->renderOptions();

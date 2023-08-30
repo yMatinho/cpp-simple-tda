@@ -35,4 +35,5 @@ void EncryptTextWidget::render()
          << facade->encrypt(text) << endl;
 
     Input::get()->anyKey("\n\nDigite qualquer tecla para voltar...");
+    History::get()->undo();
 }

@@ -10,6 +10,7 @@
 #include "../../input/Input.h"
 #include "../../crypt/CryptMakerFacade.h"
 #include "../../crypt/ROT13Strategy.h"
+#include "../../history/History.h"
 
 EncryptTextWidget::EncryptTextWidget()
 {
@@ -32,4 +33,6 @@ void EncryptTextWidget::render()
 
     cout << "Resultado: \n\n"
          << facade->encrypt(text) << endl;
+
+    Input::get()->anyKey("\n\nDigite qualquer tecla para voltar...");
 }

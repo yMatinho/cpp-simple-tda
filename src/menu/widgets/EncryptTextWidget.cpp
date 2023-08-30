@@ -4,7 +4,6 @@
 #include <cmath>
 #include <string>
 #include <stdio.h>
-#include "../../factories/OperationsMenuFactory.h"
 #include "../Option.h"
 #include "iostream"
 #include "../../input/Input.h"
@@ -34,6 +33,6 @@ void EncryptTextWidget::render()
     cout << "Resultado: \n\n"
          << facade->encrypt(text) << endl;
 
-    Input::get()->anyKey("\n\nDigite qualquer tecla para voltar...");
+    Input::get()->anyKey();
     History::get()->undo();
 }

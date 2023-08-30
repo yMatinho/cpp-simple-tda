@@ -3,10 +3,10 @@
 
 using namespace std;
 
-class ItemStackWidget : public Widget
+class PasswordGeneratorWidget : public Widget
 {
 public:
-    ItemStackWidget();
+    PasswordGeneratorWidget();
 
     virtual void beforeRender();
     virtual void render();

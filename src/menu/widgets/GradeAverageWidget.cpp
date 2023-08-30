@@ -4,10 +4,10 @@
 #include <cmath>
 #include <string>
 #include <stdio.h>
-#include "../../factories/OperationsMenuFactory.h"
 #include "../Option.h"
 #include "iostream"
 #include "../../input/Input.h"
+#include "../../history/History.h"
 
 GradeAverageWidget::GradeAverageWidget()
 {
@@ -26,6 +26,8 @@ void GradeAverageWidget::render()
     vector<float> grades = this->inputGrades();
     cout << "A média das notas é: \n\n\n"
          << this->calculateAverage(grades) << "\n\n";
+    Input::get()->anyKey();
+    History::get()->undo();
 }
 
 float GradeAverageWidget::calculateAverage(vector<float> grades)

@@ -41,7 +41,7 @@ public:
         cin >> input;
         return input;
     }
-    void anyKey(string label)
+    void anyKey(string label="\n\nDigite qualquer tecla para voltar...")
     {
         cout << label;
         cin.ignore();

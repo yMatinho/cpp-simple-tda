@@ -24,9 +24,8 @@ public:
 
     void add(Widget *widget)
     {
-        cout << "ola";
-        if(this->peek() == widget)
-        this->widgets.push_back(widget);
+        if (this->peek() != widget)
+            this->widgets.push_back(widget);
     }
     void remove()
     {
@@ -42,7 +41,7 @@ public:
         cout << this->widgets.size();
         system("clear||cls");
         this->remove();
-        if(this->peek() != nullptr)
-           this->peek()->render();
+        if (this->peek() != nullptr)
+            this->peek()->render();
     }
 };

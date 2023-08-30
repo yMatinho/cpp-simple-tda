@@ -9,8 +9,8 @@ class GradeAverageWidget : public Widget
 public:
     GradeAverageWidget();
 
-    void beforeRender();
-    void render();
+    virtual void beforeRender();
+    virtual void render();
 
 private:
     float calculateAverage(vector<float> grades);

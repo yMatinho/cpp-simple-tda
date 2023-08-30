@@ -8,7 +8,6 @@ class HelloWidget : public Widget
 public:
     HelloWidget();
 
-    void beforeRender();
-
-    void render();
+    virtual void beforeRender();
+    virtual void render();
 };

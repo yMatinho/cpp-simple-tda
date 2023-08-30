@@ -8,6 +8,6 @@ class EncryptTextWidget : public Widget
 public:
     EncryptTextWidget();
 
-    void beforeRender();
-    void render();
+    virtual void beforeRender();
+    virtual void render();
 };

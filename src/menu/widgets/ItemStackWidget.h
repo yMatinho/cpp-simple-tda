@@ -8,7 +8,6 @@ class ItemStackWidget : public Widget
 public:
     ItemStackWidget();
 
-    void beforeRender();
-
-    void render();
+    virtual void beforeRender();
+    virtual void render();
 };

@@ -1,3 +1,0 @@
-/mnt/c/Users/Afilio/Documents/cpp/nothing/build/CMakeFiles/myprogram.dir
-/mnt/c/Users/Afilio/Documents/cpp/nothing/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Afilio/Documents/cpp/nothing/build/CMakeFiles/rebuild_cache.dir

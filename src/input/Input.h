@@ -41,10 +41,19 @@ public:
         cin >> input;
         return input;
     }
-    void anyKey(string label="\n\nDigite qualquer tecla para voltar...")
+    void anyKey(string label = "\n\nDigite qualquer tecla para voltar...")
     {
         cout << label;
         cin.ignore();
         cin.ignore();
+    }
+    bool wishToContinue(string label = "\n\nDeseja continuar? Y[es] N[o] \n\n")
+    {
+        cout << label;
+        char wishToContinue;
+        cin >> wishToContinue;
+        if (wishToContinue == 'N')
+            return false;
+        return true;
     }
 };

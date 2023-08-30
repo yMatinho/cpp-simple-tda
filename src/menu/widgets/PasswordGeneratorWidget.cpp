@@ -16,6 +16,7 @@ using namespace Facades;
 
 PasswordGeneratorWidget::PasswordGeneratorWidget()
 {
+    this->identifier = Widget::PASSWORD_GENERATOR;
 }
 
 void PasswordGeneratorWidget::beforeRender()
@@ -33,6 +34,7 @@ void PasswordGeneratorWidget::render()
     StringFacade* facade = new StringFacade();
     cout << "\n\n" << facade->generateRandom(characters);
 
-    Input::get()->anyKey();
+    if(Input::get()->wishToContinue("\n\nDeseja gerar outra? Y[es] N[o] \n"))
+        this->render();
     History::get()->undo();
 }

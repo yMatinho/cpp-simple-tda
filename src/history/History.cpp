@@ -13,7 +13,8 @@ History *History::get()
 
 void History::add(Widget *widget)
 {
-    this->widgets.push_back(widget);
+    if (this->peek() != widget)
+        this->widgets.push_back(widget);
 }
 void History::remove()
 {
@@ -30,5 +31,4 @@ void History::undo()
     this->remove();
     if (this->peek() != nullptr)
         this->peek()->render();
-    this->remove();
 }

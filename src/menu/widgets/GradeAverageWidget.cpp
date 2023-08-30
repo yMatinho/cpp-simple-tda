@@ -11,6 +11,7 @@
 
 GradeAverageWidget::GradeAverageWidget()
 {
+    this->identifier = Widget::GRADE_AVERAGE;
 }
 
 void GradeAverageWidget::beforeRender()

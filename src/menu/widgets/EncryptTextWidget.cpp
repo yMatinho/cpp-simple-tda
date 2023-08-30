@@ -13,6 +13,7 @@
 
 EncryptTextWidget::EncryptTextWidget()
 {
+    this->identifier = Widget::ENCRYPT_TEXT;
 }
 
 void EncryptTextWidget::beforeRender()

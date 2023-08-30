@@ -10,6 +10,7 @@ MenuWidget::MenuWidget(vector<Option *> options, string introductionText)
 {
 	this->options = options;
 	this->introductionText = introductionText;
+	this->identifier = Widget::MENU;
 }
 
 void MenuWidget::beforeRender()

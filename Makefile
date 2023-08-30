@@ -6,7 +6,7 @@
 export SHELL := /bin/bash
 export SHELLOPTS := $(if $(SHELLOPTS),$(SHELLOPTS):)errexit:pipefail
 
-setup-local:
+build:
 	mkdir -p build && \
 	cd build && \
 	cmake .. && \
@@ -14,4 +14,11 @@ setup-local:
 execute-program:
 	clear
 	./build/myprogram
+compile-run:
+	mkdir -p build && \
+	cd build && \
+	cmake .. && \
+	cmake --build . && \
+	clear && \
+	./myprogram
 	

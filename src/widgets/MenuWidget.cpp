@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <stdio.h>
-#include "Option.h"
+#include "../menu/options/Option.h"
 #include <iostream>
 
 MenuWidget::MenuWidget(vector<Option *> options, string introductionText)

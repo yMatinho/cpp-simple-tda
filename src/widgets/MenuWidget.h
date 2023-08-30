@@ -2,7 +2,7 @@
 #include "Widget.h"
 #include <vector>
 #include "string"
-#include "Option.h"
+#include "../menu/options/Option.h"
 using namespace std;
 
 class MenuWidget : public Widget

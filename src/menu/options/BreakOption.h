@@ -1,8 +1,8 @@
 #pragma once
 #include "string"
-#include "../Widget.h"
+#include "../../widgets/Widget.h"
 #include "../../exceptions/BreakException.h"
-#include "../Option.h"
+#include "./Option.h"
 
 using namespace std;
 

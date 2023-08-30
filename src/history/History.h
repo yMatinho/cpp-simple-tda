@@ -1,7 +1,7 @@
 #pragma once
 #include "string"
 #include "iostream"
-#include "../menu/Widget.h"
+#include "../widgets/Widget.h"
 #include <vector>
 
 using namespace std;

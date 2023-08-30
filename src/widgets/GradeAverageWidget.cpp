@@ -1,13 +1,13 @@
 #include "GradeAverageWidget.h"
-#include "../Widget.h"
+#include "./Widget.h"
 #include <vector>
 #include <cmath>
 #include <string>
 #include <stdio.h>
-#include "../Option.h"
+#include "../menu/options/Option.h"
 #include "iostream"
-#include "../../input/Input.h"
-#include "../../history/History.h"
+#include "../input/Input.h"
+#include "../history/History.h"
 
 GradeAverageWidget::GradeAverageWidget()
 {

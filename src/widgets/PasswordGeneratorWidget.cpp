@@ -1,14 +1,14 @@
 #include "PasswordGeneratorWidget.h"
-#include "../Widget.h"
-#include "../../input/Input.h"
-#include "../../history/History.h"
+#include "./Widget.h"
+#include "../input/Input.h"
+#include "../history/History.h"
 #include <vector>
 #include <cmath>
 #include <string>
 #include <stdio.h>
-#include "../Option.h"
+#include "../menu/options/Option.h"
 #include "iostream"
-#include "../../facades/StringFacade.h"
+#include "../facades/StringFacade.h"
 
 const string ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789";
 

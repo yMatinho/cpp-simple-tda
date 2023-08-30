@@ -1,5 +1,5 @@
 #pragma once
-#include "../menu/MenuWidget.h"
+#include "../../widgets/MenuWidget.h"
 
 using namespace std;
 

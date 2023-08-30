@@ -1,6 +1,6 @@
 #pragma once
-#include "../Option.h"
-#include "../Widget.h"
+#include "../../widgets/Widget.h"
+#include "./Option.h"
 #include <string>
 
 using namespace std;

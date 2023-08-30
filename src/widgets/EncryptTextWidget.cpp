@@ -1,15 +1,15 @@
 #include "EncryptTextWidget.h"
-#include "../Widget.h"
+#include "./Widget.h"
 #include <vector>
 #include <cmath>
 #include <string>
 #include <stdio.h>
-#include "../Option.h"
+#include "../menu/options/Option.h"
 #include "iostream"
-#include "../../input/Input.h"
-#include "../../crypt/CryptMakerFacade.h"
-#include "../../crypt/ROT13Strategy.h"
-#include "../../history/History.h"
+#include "../input/Input.h"
+#include "../crypt/CryptMakerFacade.h"
+#include "../crypt/ROT13Strategy.h"
+#include "../history/History.h"
 
 EncryptTextWidget::EncryptTextWidget()
 {

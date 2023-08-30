@@ -1,7 +1,7 @@
 #include "Option.h"
 #include "iostream"
 #include "string"
-#include "Widget.h"
+#include "../../widgets/Widget.h"
 
 Option::Option(string label, Widget *widget)
 {

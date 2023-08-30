@@ -18,7 +18,7 @@ compile-run:
 	mkdir -p build && \
 	cd build && \
 	cmake .. && \
-	cmake --build . && \
+	cmake --build . --config build_type && \
 	clear && \
 	./myprogram
 	

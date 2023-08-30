@@ -13,47 +13,12 @@ private:
     }
 
 public:
-    static Input *get()
-    {
-        static Input *instance = new Input();
-        return instance;
-    }
+    static Input *get();
 
-    string getString(string label)
-    {
-        cout << label;
-        string input;
-        getline(std::cin >> std::ws, input);
-        return input;
-    }
+    string getString(string label);
 
-    int getInt(string label)
-    {
-        cout << label;
-        int input;
-        cin >> input;
-        return input;
-    }
-    float getFloat(string label)
-    {
-        cout << label;
-        float input;
-        cin >> input;
-        return input;
-    }
-    void anyKey(string label = "\n\nDigite qualquer tecla para voltar...")
-    {
-        cout << label;
-        cin.ignore();
-        cin.ignore();
-    }
-    bool wishToContinue(string label = "\n\nDeseja continuar? Y[es] N[o] \n\n")
-    {
-        cout << label;
-        char wishToContinue;
-        cin >> wishToContinue;
-        if (wishToContinue == 'N')
-            return false;
-        return true;
-    }
+    int getInt(string label);
+    float getFloat(string label);
+    void anyKey(string label = "\n\nDigite qualquer tecla para voltar...");
+    bool wishToContinue(string label = "\n\nDeseja continuar? Y[es] N[o] \n\n");
 };
